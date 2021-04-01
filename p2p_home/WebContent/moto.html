@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>账户中心</title>
+<link href="/p2p_home/css/bootstrap.min.css" rel="stylesheet">
+<script src="/p2p_home/js/jquery-1.12.4.min.js"></script>
+<script src="/p2p_home/js/bootstrap.min.js"></script>
+<script src="/p2p_home/js/moto.js"></script>
+</head>
+<body>
+<div class="container">
+	<!-- 网站头部-->
+	<div class="row">
+		<div class="col-md-4"><img src="../img/log.jpg" /></div>
+		<div class="col-md-4"><img src="../img/ad.jpg" /></div>
+		<div class="col-md-4 ">
+			<ul class="list-inline" style="margin-top:10px">
+				<li><a href="/p2p_home/login.jsp" class="btn btn-primary" >登录</a></li>
+				<li><a href="/p2p_home/register.html" class="btn btn-primary">注册</a></li>
+				<li><a href="" class="btn btn-danger">购物车</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- 导航条 -->
+	<div class="row">
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+					 aria-expanded="false">
+						<span class="sr-only">这是汉堡按钮</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">首页</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li ><a href="/p2p_home/space.html">账户中心</a></li>
+						<li class="active"><a href="#">购买产品<span class="sr-only">(current)</span></a></li>
+						<li class="dropdown">
+							<!-- 下拉菜单 -->
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多
+								<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">One more separated link</a></li>
+							</ul>
+						</li>
+					</ul>
+					<form class="navbar-form navbar-right">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Search">
+						</div>
+						<button type="submit" class="btn btn-default">提交</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+	</div>
+	<div class="row" id ="product" >		
+	</div>
+	<div style="display: none; border: solid gray 1px;" id="buyDiv">
+		<table style="width:1200px;">
+			<tr>
+				<td>投资金额</td>
+				<td><input type="text" placeholder="金额需为100的整数倍" id="num">&nbsp;元  &nbsp;<span style="color:red;" id="msg"></span></td>
+			</tr>
+			<tr>
+				<td>预计年化收益</td>
+				<td><span style="color: red;"><i id="annualized">0</i>%</span></td> 
+			</tr>
+			<tr>
+				<td>预计收益</td>
+				<td><span style="color: red;"><i id="preGet">0.00</i>元</span></td>
+			</tr>
+			<tr>
+				<td>配置结果</td>
+				<td>你选择了<span style="color: red;" id="canping"></span>,加入本金为<span style="color: red;" id="benjin">0</span>元,投资期限为<span style="color: red;" id="qixian">0</span>
+				个月,预计年化收益为<span style="color: red;" id="shouyi">0</span>%,预计收益为<span style="color: red;" id="shouyi1">0</span>元,请确认购买。
+				</td>
+			</tr>
+			<tr >
+				<td colspan="2">
+					<input type="button" id="buyBtn" class="btn primary-btn" value="确认购买" />
+				</td>
+			</tr>
+			
+		
+		</table>
+	
+	</div>
+	
+	
+	<!-- 网站底部 -->
+	<div class="row">
+		<div class="col-xs-12"></div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 text-center">
+			<ul class="list-inline">
+				<li><a href="">关于我们</a></li>
+				<li><a href="">联系我们</a></li>
+				<li><a href="">招贤纳士</a></li>
+				<li><a href="">法律声明</a></li>
+				<li><a href="">友情链接</a></li>
+				<li><a href="">支付方式</a></li>
+				<li><a href="">配送方式</a></li>
+				<li><a href="">服务声明</a></li>
+				<li><a href="">广告声明</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 text-center">
+			<ul class="list-inline">
+				<li>Copyright@2020-5 唐振 版权所有</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+
+
+</body>
+</html>
